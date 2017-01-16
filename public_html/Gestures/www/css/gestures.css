@@ -3,10 +3,12 @@ body {
 }
 
 body.claro {
+    -webkit-animation: ponloClaro 1.5s 1;
     background-color: #8de1bd;
 }
 
 body.oscuro {
+    -webkit-animation: ponloOscuro 1.5s 1;
     background-color: #577a76;
 }
 
@@ -43,6 +45,10 @@ button {
     -webkit-animation: presion 1.5s 1;
 }
 
+#zona-gestos.tap{
+    -webkit-animation: tap 0.1s 1;
+}
+
 #zona-gestos.swipe-derecha{
     -webkit-animation: swipe-derecha 3s 1;
 }
@@ -53,6 +59,25 @@ button {
 
 #zona-gestos.rotate{
     -webkit-animation: rotate 3s 1;
+}
+
+
+@-webkit-keyframes ponloClaro {
+  0%, 50% {
+    background-color: #719e99;
+  }
+  100% {
+    background-color: #8de1bd;
+  }
+}
+
+@-webkit-keyframes ponloOscuro {
+  0%, 50% {
+    background-color: #719e99;
+  }
+  100% {
+    background-color: #577a76;
+  }
 }
 
 @-webkit-keyframes pulsacion {
@@ -70,6 +95,15 @@ button {
   }
   50% {
     background-color: #577a76;
+  }
+}
+
+@-webkit-keyframes tap {
+  0%, 100% {
+    background-color: #7fba67;
+  }
+  50% {
+    background-color: yellow;
   }
 }
 
