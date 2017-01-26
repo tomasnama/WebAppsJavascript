@@ -1,14 +1,15 @@
-# A Blank PhoneGap App
+# Gestures
+
+PhoneGap app to test the gestures on cordova plugin.
 
 ## Usage
 
 ### PhoneGap CLI
 
-    $ phonegap create my-app --template blank
+    phonegap serve
+
+[PhoneGap Developer App](http://docs.phonegap.com/getting-started/2-install-mobile-app/)
 
 ### Desktop
 
-In your browser, open the file:
-
     /www/index.html
-
