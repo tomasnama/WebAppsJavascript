@@ -3,8 +3,8 @@
 Sample PhoneGap apps:
 
 * Camera
-    * [/public_html/customdialogs](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Camera)
+    * [/www/Camera](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Camera)
 * Gestures
-    * [/public_html/scrolltotext](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Gestures)
+    * [/wwww/Gesttures](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Gestures)
 * Maps
-    * [/public_html/drawcanvas](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Maps)
+    * [/www/Maps](https://github.com/tomasnama/WebAppsJavascript/tree/master/www/Maps)
