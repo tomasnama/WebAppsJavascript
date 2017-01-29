@@ -29,7 +29,16 @@ var app = {
 
     pintaMarcador: function (latlng, texto, mapa) {
         var marcador = L.marker(latlng).addTo(mapa);
+        
+        var circle = L.circle(latlng, {
+            color: 'black',
+            fillColor: '#f03',
+            fillOpacity: 0,
+            radius: 1000
+        }).addTo(mapa);
+        
         marcador.bindPopup(texto).openPopup();
+        
     },
 
     errorAlSolicitarLocalizacion: function (error) {
