@@ -8,7 +8,7 @@ var app = {
     },
 
     dispositivoListo: function () {
-        navigator.geolocation.getCurrentPosition(app.pintaCoordenadasEnMapa, app.errorAlSolicitarLocalizacion);
+        navigator.geolocation.watchPosition(app.pintaCoordenadasEnMapa, app.errorAlSolicitarLocalizacion);
     },
 
     pintaCoordenadasEnMapa: function (position) {
@@ -28,14 +28,23 @@ var app = {
     },
 
     pintaMarcador: function (latlng, texto, mapa) {
-        var marcador = L.marker(latlng).addTo(mapa);
+        var rcdeIcon = L.icon({
+            iconUrl: 'img/rcde.jpg',
+            iconSize: [38, 38], 
+            iconAnchor: [22, 22], 
+            popupAnchor: [-3, -76] 
+        });
+
+        var marcador = L.marker(latlng, {icon: rcdeIcon}).addTo(mapa);
         
         var circle = L.circle(latlng, {
             color: 'black',
             fillColor: '#f03',
             fillOpacity: 0,
             radius: 1000
-        }).addTo(mapa);
+        });
+        
+        circle.addTo(mapa);
         
         marcador.bindPopup(texto).openPopup();
         
@@ -50,7 +59,6 @@ var app = {
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function () {
         app.inicio();
-        app.dispositivoListo();
     }, false);
 
     document.addEventListener('deviceready', function () {
