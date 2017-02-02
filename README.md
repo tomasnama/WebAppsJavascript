@@ -9,4 +9,4 @@ Sample PhoneGap apps:
 * Maps
     * [/www/maps](https://github.com/tomasnama/web-apps/tree/master/www/maps)
 * Accelerometer
-    * [/www/maps](https://github.com/tomasnama/web-apps/tree/master/www/Accelerometer)
+    * [/www/accelerometer](https://github.com/tomasnama/web-apps/tree/master/www/accelerometer)
