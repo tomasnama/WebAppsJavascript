@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.tomasapp.accelerometer" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>accelerometer</name>
+    <name>Accelerometer</name>
     <description>
-        A blank PhoneGap app.
+        Test Accelerometer app.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="tomas.navarro@gmail.com" href="http://tomasapp.com">
+        tomasnama
     </author>
     <content src="index.html" />
     <access origin="*" />
