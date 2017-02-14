@@ -3,10 +3,12 @@
 Sample PhoneGap apps:
 
 * Camera
-    * [/www/camera](https://github.com/tomasnama/web-apps/tree/master/www/camera)
+    * [/camera](https://github.com/tomasnama/web-apps/tree/master/camera)
 * Gestures
-    * [/wwww/gestures](https://github.com/tomasnama/web-apps/tree/master/www/gestures)
+    * [/gestures](https://github.com/tomasnama/web-apps/tree/master/gestures)
 * Maps
-    * [/www/maps](https://github.com/tomasnama/web-apps/tree/master/www/maps)
+    * [/maps](https://github.com/tomasnama/web-apps/tree/master/maps)
 * Accelerometer
-    * [/www/accelerometer](https://github.com/tomasnama/web-apps/tree/master/www/accelerometer)
+    * [/accelerometer](https://github.com/tomasnama/web-apps/tree/master/accelerometer)
+* Notes
+    * [/accelerometer](https://github.com/tomasnama/web-apps/tree/master/notes)
