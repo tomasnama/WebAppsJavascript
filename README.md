@@ -11,4 +11,4 @@ Sample PhoneGap apps:
 * Accelerometer
     * [/accelerometer](https://github.com/tomasnama/web-apps/tree/master/accelerometer)
 * Notes
-    * [/accelerometer](https://github.com/tomasnama/web-apps/tree/master/notes)
+    * [/notes](https://github.com/tomasnama/web-apps/tree/master/notes)
