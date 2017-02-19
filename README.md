@@ -1,4 +1,4 @@
-# Web Apps Javasript
+# Web Apps Javascript
 
 Sample PhoneGap apps:
 
