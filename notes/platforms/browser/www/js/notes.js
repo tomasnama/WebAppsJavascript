@@ -77,10 +77,12 @@ var app = {
     },
 
     leerDatos: function () {
+        alert(cordova.file.externalApplicationStorageDirectory);
         window.resolveLocalFileSystemURL(cordova.file.externalApplicationStorageDirectory, this.obtenerFS, this.fail);
     },
 
     obtenerFS: function (fileSystem) {
+        alert(fileSystem);
         fileSystem.getFile("files/" + "model.json", null, app.obtenerFileEntry, app.noFile);
     },
 
@@ -103,6 +105,7 @@ var app = {
 
     fail: function (error) {
         console.log(error.code);
+        alert(error.code);
     }
 
 }
