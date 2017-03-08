@@ -1,6 +1,6 @@
 var app = {
     
-    model: {
+    model: { 
         "notas": [{"titulo": "Comprar pan", "contenido": "Oferta en la panaderia de la esquina"}]
     },
 
@@ -73,12 +73,28 @@ var app = {
     },
 
     grabarDatos: function () {
-        window.resolveLocalFileSystemURL(cordova.file.externalApplicationStorageDirectory, this.gotFS, this.fail);
+        console.log("grabarDatos");
+        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, this.gotFS, this.fail);
     },
+    
+    gotFS: function (fileSystem) {
+        fileSystem.getFile("files/" + "model.json", {create: true, exclusive: false}, app.gotFileEntry, app.fail);
+    },
+    
+    gotFileEntry: function (fileEntry) {
+        fileEntry.createWriter(app.gotFileWriter, app.fail);
+    },
+    
+    gotFileWriter: function (writer) {
+        writer.onwriteend = function (evt) {
+            console.log("datos grabados en externalApplicationStorageDirectory");
+        };
+        writer.write(JSON.stringify(app.model));
+    }, 
 
-    leerDatos: function () {
-        alert(cordova.file.externalApplicationStorageDirectory);
-        window.resolveLocalFileSystemURL(cordova.file.externalApplicationStorageDirectory, this.obtenerFS, this.fail);
+    leerDatos: function () { 
+        console.log("leerDatos");
+        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, this.obtenerFS, this.fail);
     },
 
     obtenerFS: function (fileSystem) {
@@ -100,17 +116,15 @@ var app = {
     },
 
     noFile: function (error) {
+        console.log("Error code: "+error.code);
         app.inicio();
     },
 
     fail: function (error) {
-        console.log(error.code);
-        alert(error.code);
+        console.log("Error code: "+error.code);
     }
 
 }
-
-
 
 if ('addEventListener' in document) {
     document.addEventListener("deviceready", function () {

@@ -8,9 +8,7 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
-    <engine name="ios" spec="~4.3.1" />
-    <preference name="iosPersistentFileLocation" value="Library" />
-    <preference name="iosPersistentFileLocation" value="Compatibility" />
+    <platform name="android" />
+    <access origin="*" />
 </widget>
